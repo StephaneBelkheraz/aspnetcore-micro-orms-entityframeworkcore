@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Book>
+
+<div>
+    <div><strong>Book List</strong></div>
+    @foreach (var b in Model)
+    {
+        <p>Id: @b.Id , Name: @b.Name</p>
+    }
+</div>
+<br />

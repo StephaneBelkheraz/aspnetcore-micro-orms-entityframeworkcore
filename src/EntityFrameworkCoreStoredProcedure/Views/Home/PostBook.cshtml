@@ -1,0 +1,15 @@
+﻿@model Book
+<div>
+    <div><strong>Insert a book</strong></div>
+    <div>
+        <form asp-action="PostBook" method="post" asp-antiforgery="true">
+            <div>
+                <label asp-for="Name"></label>
+                <input type="text" asp-for="Name"  />
+            </div>
+            <div>
+                <input type="submit" value="Envoyer" />
+            </div>
+        </form>
+    </div>
+</div>

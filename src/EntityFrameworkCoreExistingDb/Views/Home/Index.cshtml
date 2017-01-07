@@ -1,0 +1,16 @@
+﻿@model List<Book>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Data From CookBook existing DB With Reverse Engineering</h2>
+        <ul>
+            @foreach (var b in Model)
+            {
+                <li>Id: @b.Id , Name: @b.Name</li>
+            }
+        </ul>
+    </div>
+</div>

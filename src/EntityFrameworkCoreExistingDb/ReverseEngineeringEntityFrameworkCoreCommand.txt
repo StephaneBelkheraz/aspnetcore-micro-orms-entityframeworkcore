@@ -1,0 +1,2 @@
+﻿Before we have to import the EF Tools in project.json
+dotnet ef dbcontext scaffold -c ProductDbContext -o Models "Data Source=MCNLTP173;Initial Catalog=FormationCore;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer --force
